@@ -8,7 +8,7 @@ namespace DP
 {
     public class Islands
     {
-        public void Count(int[][] map)
+        public int CountIslands(int[][] map)
         {
             Print(map);
 
@@ -25,6 +25,7 @@ namespace DP
                     }
                 }
             }
+            return count;
         }
 
         void SinkIsland(int[][] map, int x, int y)
